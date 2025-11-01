@@ -1,0 +1,477 @@
+/* Dashboard Message Board Admin Styles */
+
+#dmb-widget-container,
+#dmb-admin-container {
+    position: relative;
+}
+
+/* Admin page specific styles */
+#dmb-admin-container {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    border: 1px solid #e5e5e5;
+}
+
+.dmb-view {
+    display: none;
+}
+
+.dmb-view.active {
+    display: block;
+}
+
+/* Form Styles */
+.dmb-form-group {
+    margin-bottom: 20px;
+}
+
+.dmb-form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.dmb-form-group input[type="text"],
+.dmb-form-group textarea,
+.dmb-form-group select {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.dmb-form-group textarea {
+    resize: vertical;
+}
+
+.dmb-form-group small {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+    font-style: italic;
+}
+
+/* CRITICAL: WordPress Editor Fixes for Text Visibility */
+.wp-editor-wrap {
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+/* Prevent duplicate editor tabs */
+.wp-editor-wrap + .wp-editor-wrap {
+    display: none !important;
+}
+
+/* Hide any duplicate editor instances */
+.dmb-form-group .wp-editor-wrap:not(:first-child) {
+    display: none !important;
+}
+
+.wp-editor-wrap .wp-editor-tools {
+    border-bottom: 1px solid #ddd;
+    background: #f1f1f1;
+    padding: 0;
+    margin-bottom: 0 !important;
+}
+
+.wp-editor-wrap .wp-editor-tabs {
+    float: left;
+    margin: 0 !important;
+    padding: 0;
+}
+
+.wp-editor-wrap .wp-editor-tabs .wp-switch-editor {
+    background: #ebebeb;
+    color: #333 !important;
+    cursor: pointer;
+    float: left;
+    font-size: 13px;
+    line-height: 1;
+    margin: 5px 0 0 5px;
+    padding: 8px 12px;
+    position: relative;
+    text-decoration: none;
+    border-radius: 3px 3px 0 0;
+    border: 1px solid #ddd;
+    border-bottom: none;
+}
+
+.wp-editor-wrap .wp-editor-tabs .wp-switch-editor:hover {
+    background: #fff;
+    color: #333 !important;
+}
+
+/* Visual Tab Active State */
+.wp-editor-wrap.tmce-active .wp-editor-tabs .switch-tmce,
+.wp-editor-wrap.tmce-active .wp-editor-tabs .switch-tmce:hover {
+    background: #fff !important;
+    border-bottom-color: #fff !important;
+    color: #333 !important;
+    font-weight: 600;
+}
+
+/* Code Tab Active State */
+.wp-editor-wrap.html-active .wp-editor-tabs .switch-html,
+.wp-editor-wrap.html-active .wp-editor-tabs .switch-html:hover {
+    background: #fff !important;
+    border-bottom-color: #fff !important;
+    color: #333 !important;
+    font-weight: 600;
+}
+
+/* CRITICAL: Fix for invisible text in editor textarea */
+.wp-editor-container {
+    background: #fff;
+    border: none;
+    position: relative;
+    clear: both;
+}
+
+.wp-editor-container textarea.wp-editor-area {
+    background: #fff !important;
+    color: #333 !important;
+    font-family: Consolas, Monaco, monospace !important;
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    border: none !important;
+    padding: 15px !important;
+    width: 100% !important;
+    height: 200px !important;
+    resize: vertical !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    outline: none;
+    z-index: 1;
+    position: relative;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Force text visibility in Code tab (HTML mode) */
+.wp-editor-wrap.html-active .wp-editor-container textarea.wp-editor-area {
+    background: #f9f9f9 !important;
+    color: #23282d !important;
+    font-family: Consolas, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace !important;
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    border: 1px solid #ddd !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Force text visibility in Visual tab (TinyMCE mode) */
+.wp-editor-wrap.tmce-active .wp-editor-container {
+    background: #fff !important;
+}
+
+.wp-editor-wrap.tmce-active .wp-editor-container iframe {
+    background: #fff !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* TinyMCE iframe content styling */
+.wp-editor-wrap.tmce-active .mce-edit-area iframe {
+    background: #fff !important;
+    color: #333 !important;
+}
+
+/* Additional spacing fixes */
+.wp-editor-tools {
+    margin-bottom: 0 !important;
+    padding-bottom: 10px;
+}
+
+.wp-editor-container {
+    margin-top: 0 !important;
+    padding-top: 0;
+}
+
+/* Ensure proper spacing between label and editor */
+.dmb-form-group .wp-editor-wrap {
+    margin-top: 8px;
+}
+
+/* Override any conflicting styles that might hide text */
+.wp-editor-area,
+.wp-editor-area:focus,
+.wp-editor-area:hover {
+    color: #333 !important;
+    background: #fff !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: block !important;
+}
+
+.dmb-visibility-options {
+    margin-bottom: 10px;
+}
+
+.dmb-visibility-options label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.dmb-visibility-options input[type="radio"] {
+    margin-right: 5px;
+}
+
+#dmb-user-selection,
+#dmb-edit-user-selection {
+    margin-top: 10px;
+    padding: 10px;
+    background: #f5f5f5;
+    border-radius: 3px;
+}
+
+#dmb-selected-users,
+#dmb-edit-selected-users {
+    min-height: 100px;
+}
+
+.dmb-form-actions {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+	display: flex !important;
+    gap: 5px !important;
+}
+
+.dmb-form-actions button {
+    margin-right: 10px;
+}
+
+/* Notes List Styles */
+.dmb-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.dmb-header h4 {
+    margin: 0;
+}
+
+.dmb-notes-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* Admin page has more space */
+#dmb-admin-container .dmb-notes-list {
+    max-height: 600px;
+}
+
+.dmb-note-item {
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.dmb-note-item:hover {
+    background: #f5f5f5;
+    border-color: #ccc;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.dmb-note-item h5 {
+    margin: 0 0 5px 0;
+    color: #0073aa;
+    font-size: 14px;
+}
+
+.dmb-note-meta {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.dmb-note-author {
+    margin-left: 5px;
+}
+
+.dmb-note-excerpt {
+    font-size: 13px;
+    color: #444;
+    line-height: 1.4;
+}
+
+/* Single Note View Styles */
+.dmb-single-note-content,
+.dmb-edit-note-content {
+    padding: 10px 0;
+}
+
+.dmb-single-note-content h3,
+.dmb-edit-note-content h3 {
+    margin: 15px 0 10px 0;
+    color: #23282d;
+}
+
+.dmb-note-content {
+    margin: 15px 0;
+    padding: 15px;
+    background: #f9f9f9;
+    border-left: 3px solid #0073aa;
+    line-height: 1.6;
+}
+
+.dmb-note-content a {
+    color: #0073aa;
+    text-decoration: underline;
+}
+
+.dmb-note-content p {
+    margin-bottom: 1em;
+}
+
+.dmb-note-content ul,
+.dmb-note-content ol {
+    margin-left: 20px;
+    margin-bottom: 1em;
+}
+
+.dmb-visibility-info {
+    margin: 15px 0;
+    padding: 10px;
+    background: #e8f5e9;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.dmb-note-actions {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+	display: flex;
+    gap: 5px;
+}
+
+.dmb-note-actions button {
+    margin-right: 10px;
+}
+
+.dmb-delete-note {
+    color: #a00;
+}
+
+.dmb-delete-note:hover {
+    color: #dc3232;
+    border-color: #dc3232;
+}
+
+.dmb-back-to-list {
+    margin-bottom: 15px;
+}
+
+/* Responsive adjustments for dashboard widget */
+@media screen and (max-width: 782px) {
+    .dmb-form-actions button,
+    .dmb-note-actions button {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .dmb-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .dmb-header button {
+        margin-top: 10px;
+    }
+}
+
+/* Recent Notes Section */
+.dmb-recent-notes {
+    margin-top: 20px;
+}
+
+.dmb-recent-notes h4 {
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.dmb-recent-notes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dmb-recent-notes li {
+    padding: 4px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.dmb-recent-notes li:last-child {
+    border-bottom: none;
+}
+
+.dmb-recent-notes a {
+    color: #0073aa;
+    text-decoration: none;
+}
+
+.dmb-recent-notes a:hover {
+    text-decoration: underline;
+}
+
+/* Admin Table Styles */
+.wp-list-table .column-title {
+    width: 40%;
+}
+
+.wp-list-table .column-author {
+    width: 20%;
+}
+
+.wp-list-table .column-visibility {
+    width: 20%;
+}
+
+.wp-list-table .column-date {
+    width: 20%;
+}
+
+.wp-list-table .dmb-admin-view-note,
+.wp-list-table .dmb-admin-edit-note {
+    text-decoration: none;
+}
+
+.wp-list-table .row-actions {
+    color: #ddd;
+}
+
+/* Admin Modal Styles */
+#dmb-admin-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.7);
+    z-index: 100000;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+#dmb-admin-modal-content {
+    position: relative;
+}
